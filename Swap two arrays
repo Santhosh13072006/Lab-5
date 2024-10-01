@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    printf("enter no.of elements:");
+    
+    scanf("%d",&n);
+   
+    
+    printf("enter 1 array:\n");
+    int a[n];
+    for( i=0;i<n;i++)
+    {
+        printf("enter %d elment:",i+1);
+        scanf("%d",&a[i]);
+    }
+    printf("enter 2 array:\n");
+    int b[n];
+    for( i=0;i<n;i++)
+    {
+        printf("enter %d elment:",i+1);
+        scanf("%d",&b[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        int h;
+        h=a[i];
+        a[i]=b[i];
+        b[i]=h;
+        
+        printf("a[%d]=%d\t",i+1,a[i]);
+        printf("b[%d]=%d",i+1,b[i]);
+        printf("\n");
+    }
+       
+       
+    return 0;
+}
