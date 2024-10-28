@@ -4,7 +4,7 @@ int main()
 
 {
     char s[100];
-    int n,i,h[100];
+    int n,i,h[100],j,a;
     printf("enter string 1\n");
     gets(s);
     n=strlen(s);
@@ -16,7 +16,7 @@ int main()
      for(i=0;i<n;i++)
 
      {
-         for(j=1;j<n;j++)
+         for(j=i+1;j<n;j++)
          {
             if(h[i]>h[j]) 
            {
